@@ -1,0 +1,15 @@
+const Nav = () =>{
+  const [isOpen, SetIsOpen] = useState(false)
+
+  const toggleNavbar = () =>{
+    SetIsOpen(!isopen);
+  };
+  return 
+  <nav className='w-1/3'>
+    <div className='hidden md:flex justify-between'>
+      <NavLink />
+    </div>
+    <div className='md:hidden'>
+      <button onClick={toggleNavbar}>{isOpen?<X/>:<Menu/>}</button>
+    </div>
+  </nav>
