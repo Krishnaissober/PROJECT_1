@@ -4,10 +4,9 @@ import Logo from '../Components/Logo.jsx'
 import Navbar from './Navbar.jsx'
 function Nav() {
   return (
-<div className='sticky top-0 z-20 mx-auto flex w-full items-center justify-between px-1' >
+<div className='w-full max-w-10xl mx-auto px-6 py-6 flex justify-between items-center z-40 border-b-2 shadow-2xl'>
   <Logo/>
   <Navbar/>
-
 </div>
   )
 }

@@ -12,4 +12,103 @@ const Nav = () =>{
     <div className='md:hidden'>
       <button onClick={toggleNavbar}>{isOpen?<X/>:<Menu/>}</button>
     </div>
+       <section className="relative min-h-screen bg-[#F4EBE1] text-[#2D2219] font-sans overflow-hidden flex flex-col justify-between">
+
+        {/* Navigation Header */}
+        <header className="w-full max-w-7xl mx-auto px-6 py-6 flex justify-between items-center z-10">
+          <div className="text-2xl font-bold tracking-tight text-[#2D2219]">
+            KRAFT<span className="text-[#4A6B53]">CO.</span>
+          </div>
+          <nav className="hidden md:flex space-x-8 font-medium text-sm">
+            <a href="#" className="hover:text-[#4A6B53] transition-colors">Products</a>
+            <a href="#" className="hover:text-[#4A6B53] transition-colors">Sustainability</a>
+            <a href="#" className="hover:text-[#4A6B53] transition-colors">Wholesale</a>
+            <a href="#" className="hover:text-[#4A6B53] transition-colors">Our Story</a>
+          </nav>
+          <div>
+            <a href="#" className="bg-[#2D2219] text-[#F4EBE1] px-5 py-2.5 rounded-md text-sm font-semibold hover:bg-[#4A6B53] transition-colors shadow-sm">
+              Get a Quote
+            </a>
+          </div>
+        </header>
+
+        {/* Hero Body Section */}
+        <div className="w-full max-w-7xl mx-auto px-6 py-12 md:py-24 grid grid-cols-1 lg:grid-cols-12 gap-12 items-center my-auto">
+          
+          {/* Left Column: Copy & CTAs */}
+          <div className="lg:col-span-7 space-y-6 md:space-y-8">
+            {/* Badge */}
+            <div className="inline-flex items-center space-x-2 bg-[#EADCC9] px-3 py-1.5 rounded-full text-xs font-semibold uppercase tracking-wider text-[#4A6B53]">
+              <span>🍃 100% Biodegradable & Recyclable</span>
+            </div>
+            
+            {/* Main Heading */}
+            <h1 className="text-4xl sm:text-5xl md:text-6xl font-serif font-bold leading-tight text-[#2D2219]">
+              Raw Strength.<br />
+              <span className="text-[#4A6B53] italic font-normal">Conscious</span> Packaging.
+            </h1>
+            
+            {/* Subheading */}
+            <p className="text-base sm:text-lg text-[#5A4F43] max-w-xl leading-relaxed">
+              Premium, heavy-duty Kraft paper solutions tailored for industrial, retail, and custom packaging. Engineered for maximum durability, crafted for a circular economy.
+            </p>
+            
+            {/* Action Buttons */}
+            <div className="flex flex-col sm:flex-row items-start sm:items-center space-y-4 sm:space-y-0 sm:space-x-6 pt-2">
+              <button className="w-full sm:w-auto bg-[#2D2219] text-[#F4EBE1] px-8 py-4 rounded-md font-medium text-base hover:bg-[#1f1711] transition-all transform hover:-translate-y-0.5 shadow-md">
+                Request Free Sample Pack
+              </button>
+              <button className="w-full sm:w-auto flex items-center justify-center space-x-2 font-semibold text-[#2D2219] hover:text-[#4A6B53] transition-colors group py-3">
+                <span>Explore Catalog</span>
+                <span className="transform group-hover:translate-x-1 transition-transform">→</span>
+              </button>
+            </div>
+            
+            {/* Trust Markers / Social Proof */}
+            <div className="pt-6 border-t border-[#EADCC9] flex flex-wrap gap-6 text-xs font-medium text-[#7A6E61]">
+              <div className="flex items-center space-x-1">
+                <span className="text-amber-600">★★★★★</span>
+                <span>4.9/5 Industry Rating</span>
+              </div>
+              <div className="flex items-center space-x-1">
+                <span>🌲 FSC® Certified Material</span>
+              </div>
+              <div className="flex items-center space-x-1">
+                <span>📦 Global Bulk Shipping</span>
+              </div>
+            </div>
+          </div>
+          
+          {/* Right Column: Visual Showcase */}
+          <div className="lg:col-span-5 relative w-full aspect-square lg:aspect-auto lg:h-[500px] bg-[#EADCC9] rounded-2xl overflow-hidden shadow-inner flex items-center justify-center group">
+            {/* 
+              Placeholder for Product Imagery. 
+              In production, replace the placeholder div with a high-res cutout PNG 
+              of a Kraft paper roll / boxes with transparent or matching background.
+            */}
+            <div className="absolute inset-0 bg-cover bg-center mix-blend-multiply opacity-20" style={{ backgroundImage: "url('https://www.transparenttextures.com/patterns/cardboard-flat.png')" }}></div>
+            
+            <div className="text-center p-8 z-10">
+              <span className="text-sm font-mono tracking-widest text-[#7A6E61] uppercase block mb-2">[ Product Showcase Image ]</span>
+              <p className="text-xs text-[#5A4F43] max-w-xs mx-auto">High-resolution photography of custom Kraft rolls, corrugated boxes, and shopping bags goes here.</p>
+            </div>
+            
+            {/* Subtle Floating Badge */}
+            <div className="absolute bottom-6 left-6 bg-white/90 backdrop-blur-sm p-4 rounded-xl shadow-lg flex items-center space-x-3 border border-[#EADCC9]">
+              <div className="w-10 h-10 bg-[#4A6B53] text-white rounded-full flex items-center justify-center font-bold text-sm">
+                120g
+              </div>
+              <div>
+                <p className="text-xs font-bold text-[#2D2219]">Bursting Strength</p>
+                <p className="text-[10px] text-[#7A6E61]">Premium Industrial Grade</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+        
+        {/* Subtle Footer Wave/Texture Spacer */}
+        <div className="w-full h-8 bg-[#2D2219]/5"></div>
+      </section>
+    </div>
   </nav>

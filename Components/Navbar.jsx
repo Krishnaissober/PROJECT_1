@@ -8,20 +8,20 @@ const Navbar = () => {
   };
   return (
     <nav>
-      <div className="hidden gap-20 md:flex font-semibold text-center">
-        <NavLink to="/home"> Home </NavLink>
-        <NavLink to="/Contact"> Contact </NavLink>
-        <NavLink to="/Explore"> About Us </NavLink>
+      <div className="hidden gap-20 md:flex font-semibold text-center text-xl hover:text-[#4A6B53] transition-colors">
+        <NavLink to="/home"> Products </NavLink>
+        <NavLink to="/Contact"> Sustainability </NavLink>
+        <NavLink to="/Explore"> Wholesale </NavLink>
       </div>
       <button className="md:hidden" onClick={togglebtn}>
         {isOpen ? <X /> : <Menu />}
       </button>
       <div
-        className={`${isOpen ? "flex" : "hidden"} flex flex-col absolute top-20 right-1 font-semibold gap-2 text-center w-full shadow-xl`}
+        className={`${isOpen ? "flex" : "hidden"} flex flex-col fixed top-20 left-0 font-semibold gap-2 bg-white text-center w-full shadow-xl  py-9 z-{90} border-b-2 shadow-xl`}
       >
-        <NavLink to="/home"> Home </NavLink>
-        <NavLink to="/Contact"> Contact </NavLink>
-        <NavLink to="/Explore"> About Us </NavLink>
+        <NavLink to="/home"> Products </NavLink>
+        <NavLink to="/Contact"> Sustainability </NavLink>
+        <NavLink to="/Explore"> Wholesale </NavLink>
       </div>
     </nav>
   );
